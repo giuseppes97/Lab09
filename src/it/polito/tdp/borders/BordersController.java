@@ -48,6 +48,8 @@ public class BordersController {
     	  }
     	  txtResult.appendText("\n");
       }
+     int conn=model.getNumeroConnessi();
+     txtResult.appendText("Il numero di vertici connessi e' : "+conn);
 		
 	}
 

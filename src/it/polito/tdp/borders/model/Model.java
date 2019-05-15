@@ -52,6 +52,14 @@ public class Model {
 		}
 		return confinanti;
 	}
+	public int getNumeroConnessi() {
+		int connessi=0;
+		for(Country c:paesi) {
+			if(Graphs.neighborListOf(grafo, c).size()>0) connessi++;
+			
+		}
+		return connessi;
+	}
 	
     
 }
